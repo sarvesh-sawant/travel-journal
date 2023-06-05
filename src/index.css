@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .heading {
@@ -16,4 +17,108 @@
 .heading > .heading-text {
     color:white;
     padding-left: 0.5em;
+    font-size: 0.8rem;
+}
+
+.travel-info{
+    display: flex;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    justify-content: space-between; 
+}
+
+.travel-info--imageUrl {
+    margin-right: 1em;
+    border-radius: 0.75em;
+    width: 25%;
+}
+
+.travel-info--location {
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+      
+}
+
+
+.travel-info--location-icon{
+    display: flex;
+    gap: 0.3em;
+}
+
+.travel-info--title {
+    margin-bottom: 0.3em;
+    color: #2B283A;
+}
+
+.travel-info--date {
+    margin-bottom: 0.3em;
+    font-size: 0.75rem;
+    color: #2B283A;
+}
+
+.travel-info--description{
+    font-size: 0.85rem;
+    color: #2B283A;
+}
+
+.travel-info--location-icon-img {
+    color:#F55A5A;
+}
+
+.travel-info--location-icon > p{
+    color:#2B283A;
+    font-size: 0.8rem;
+}
+
+.travel-info--location-url{
+    color:#918E9B;
+    font-size: 0.8rem;
+}
+
+.heading-image {
+    width: 5%;
+}
+
+@media ( min-width: 1000px){
+    .travel-info--location-url{
+        font-size: 1rem;
+    }
+
+    .travel-info--location-icon > p{
+        font-size: 1rem;
+    }
+    
+    .travel-info--date {
+        margin-bottom: 0.3em;
+        font-size: 1rem;
+    }
+    
+    .travel-info--description{
+        font-size: 1.2rem;
+
+    }
+
+    .travel-info--title {
+        margin-bottom: 0.5em;
+        margin-top: 0.3em;
+        font-size: 2rem;
+    }
+
+    .travel-info--imageUrl {
+        width: 25vh;
+        height: 33vh;
+    }
+
+    .heading-image {
+        width: 3%;
+    }
+
+    .heading > .heading-text {
+        font-size: 1.4rem;
+    }
 }
